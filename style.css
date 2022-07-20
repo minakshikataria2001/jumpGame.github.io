@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    overflow: hidden;
+    background-image: url("bg.webp");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: 100% 100%;
+}
+.headOfGame{
+    font-size: 20px;
+
+}
+.scoreCount{
+    font-size: 20px;
+
+}
+.gameContainer{
+    border: 2px solid black;
+    margin-top: 270px;
+    min-height: 40vh;
+    min-width: 100vw;
+    /* display: grid;
+    grid-template-rows: repeat(10,0.1fr);
+    grid-template-columns:repeat(10 ,0.1fr) ; */
+}
+.player{
+    /* background-image:url("player.jfif") ; */
+    background-image: url("player-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 520px;
+    left: 250px;
+    /* bottom: 300px; */
+
+}
+.attackerAni{
+    animation: attackerAnimation 3s linear infinite;
+}
+.attacker{
+    background-image: url("attacker-removebg-preview.png");
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 520px;
+    left: 800px;
+    /* bottom: 0; */
+    
+}
+.gameOver{
+    visibility: hidden;
+    color: red;
+    margin: 100px;
+    border: 5px solid red;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.headOfGame{
+    /* color: red; */
+    /* margin: 100px; */
+    min-height: 30px;
+    border: 5px solid brown;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+}
+@keyframes attackerAnimation {
+    0%{
+  left: 100vw;
+    }
+    100%{
+left: -10vw;
+    }
+    
+}
+.ap{
+    animation: player 0.8s linear;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+   /* animation-name: player; */
+   /* animation-duration: 0.6; */
+}
+@keyframes player{
+    0%{
+       top: 520px;
+    }
+    50%{
+top: 320px;
+    }
+    100%{
+top: 520px;
+    }
+}
+/* .moveLeft{
+left: 200px;
+} */
+/* .moveRight{
+left: 300px;
+} */
